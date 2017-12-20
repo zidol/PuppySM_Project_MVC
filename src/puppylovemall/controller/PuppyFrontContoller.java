@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import common.Action;
 import common.ActionForward;
+import puppylovemall.action.PuppyBuyAddAction;
+import puppylovemall.action.PuppyBuyListAction;
 import puppylovemall.action.PuppyCartAddAction;
 import puppylovemall.action.PuppyCartListAction;
 import puppylovemall.action.PuppyCartQtyDownAction;
@@ -97,6 +99,20 @@ public class PuppyFrontContoller extends HttpServlet {
 			}
 		} else if(command.equals("/puppyCartQtyDown.pu")) {
 			action = new PuppyCartQtyDownAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if(command.equals("/puppyBuyAdd.pu")) {
+			action = new PuppyBuyAddAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if(command.equals("/puppyBuyList.pu")) {
+			action = new PuppyBuyListAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {

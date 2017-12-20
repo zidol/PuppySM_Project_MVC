@@ -476,6 +476,7 @@ function checkQtyUp(pid, qty) {
 				</tr>
 				<tr>
 					<td colspan="6" style="text-align: center;">
+						<input type="submit" value="주문" formaction="puppyBuyAdd.pu"/>
 						<input type="submit" value="삭제" formaction="puppyCartRemove.pu"/>
 					</td>
 				</tr>
