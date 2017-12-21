@@ -17,7 +17,7 @@ public class PuppyCartRemoveAction implements Action{
 		HttpSession session = request.getSession();
 		String mid = (String)session.getAttribute("id");
 		
-		String[] idArray = request.getParameterValues("remove");
+		String[] idArray = request.getParameterValues("check");
 		PuppyCartRemoveService puppyCartRemoveService = new PuppyCartRemoveService();
 		puppyCartRemoveService.cartRemove(idArray, mid);
 		System.out.println(idArray);

@@ -6,10 +6,8 @@ import static common.JdbcUtil.getConnection;
 import static common.JdbcUtil.rollback;
 
 import java.sql.Connection;
-import java.util.ArrayList;
 
 import puppylovemall.dao.BuyDAO;
-import puppylovemall.vo.Buy;
 import puppylovemall.vo.Cart;
 
 public class PuppyBuyAddService {
@@ -49,21 +47,27 @@ public class PuppyBuyAddService {
 		}
 	}*/
 	
-	public int addBuy(Buy buy) {
+	public int addBuy(String[] idArray, String mid) {
 		BuyDAO buyDAO = BuyDAO.getInstance();
 		Connection con = getConnection();
 		buyDAO.setConnection(con);
 		
-		int listCount = 0;
+		int count = 0;
+		Cart cart = null;
+		//Buy 테이블에 구매 상품 추가, Cart 테이블에서 구매된 상품 삭제
+		for(int i=0; i<idArray.length; i++) {
+			cart = buyDAO.selectCart(Integer.parseInt(idArray[i]), mid);//cart에 있는 항목을 pid, mid에 대하여 검색해서 넘겨줌
+			buyDAO.insertBuy(cart);		//Buy 테이블에 구매 상품 추가
+			buyDAO.deleteCart(Integer.parseInt(idArray[i]), mid);	//Cart 테이블에서 구매된 상품 삭제
+			count++;
+		}
 		
-		listCount = buyDAO.insertBuy(buy);
-					
-		if(listCount > 0) {
+		if(count > 0) {
 			commit(con);
 		} else {
 			rollback(con);
 		}
 		close(con);
-		return listCount;
+		return count;
 	}
 }

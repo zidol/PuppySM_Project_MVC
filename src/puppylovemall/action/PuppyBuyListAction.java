@@ -8,8 +8,8 @@ import javax.servlet.http.HttpSession;
 
 import common.Action;
 import common.ActionForward;
-import puppylovemall.svc.PuppyCartListService;
-import puppylovemall.vo.Cart;
+import puppylovemall.svc.PuppyBuyListService;
+import puppylovemall.vo.Buy;
 
 public class PuppyBuyListAction implements Action{
 
@@ -17,21 +17,21 @@ public class PuppyBuyListAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		HttpSession session = request.getSession();
 		String mid = (String) session.getAttribute("id");
-		PuppyCartListService puppyCartListService = new PuppyCartListService();
-		List<Cart> cartList = puppyCartListService.getCartList(mid);
+		PuppyBuyListService puppyBuyListService = new PuppyBuyListService();
+		List<Buy> buyList = puppyBuyListService.getBuyList(mid);
 		
 		///총금액 계산
 		int totalMoney = 0;	
 		int money = 0;
 		
-		for(int i = 0; i <cartList.size(); i++) {
-			money = cartList.get(i).getPrice()*cartList.get(i).getQty();
+		for(int i = 0; i <buyList.size(); i++) {
+			money = buyList.get(i).getPrice()*buyList.get(i).getQty();
 			totalMoney +=money;
 		}
 		
 		request.setAttribute("totalMoney", totalMoney);
-		request.setAttribute("cartList", cartList);
-		ActionForward forward = new ActionForward("puppymall/puppyCartList.jsp", false);
+		request.setAttribute("buyList", buyList);
+		ActionForward forward = new ActionForward("puppymall/puppyBuyList.jsp", false);
 		return forward;
 	}
 

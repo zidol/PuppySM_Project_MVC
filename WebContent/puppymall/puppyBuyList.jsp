@@ -6,10 +6,22 @@
 <head>
 <meta charset="UTF-8">
 <title>구매 목록</title>
+<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+   	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Custom fonts for this template-->
+	  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <!-- Page level plugin CSS-->
+	  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	  <!-- Custom styles for this template-->
+	  <link href="css/sb-admin.css" rel="stylesheet">
 <style type="text/css">
 	#listForm{
 		width: 640px;
-		border: 1px red solid;
+		/* border: 1px red solid; */
 		margin: auto;
 	}
 	
@@ -46,7 +58,7 @@
 		border: none;
 	}
 	
-	#cartImage{
+	#buyImage{
 		width: 70px;
 		height: 70px;
 		border: none;
@@ -98,7 +110,7 @@ function checkQtyUp(pid, qty) {
 	<c:if test="${buyList != null && buyList.size()>0}">
 		<h2>구매목록</h2>
 		<form method="post">
-		<table>
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 			<tr class="tr_top">
 				<td><input type="checkbox" id="allCheck" name="allCheck"
 				onclick="checkAll(this.form)"/></td>
@@ -124,13 +136,13 @@ function checkQtyUp(pid, qty) {
 					<td>${buy.buy_state }</td>
 				</tr>
 			</c:forEach>
-				<tr>
-					<td colspan="6" style="text-align: center;">
+				<tr align="center">
+					<td colspan="8" style="text-align: right;">
 						총 금액 : ${totalMoney }원
 					</td>
 				</tr>
 				<tr>
-					<td colspan="6" style="text-align: center;">
+					<td colspan="8" style="text-align: center;">
 						<input type="submit" value="주문" formaction="puppyBuyList.pu"/>
 						<input type="submit" value="삭제" formaction="puppyCartRemove.pu"/>
 					</td>
@@ -138,13 +150,14 @@ function checkQtyUp(pid, qty) {
 		</table>
 		</form>
 	</c:if>
-	<c:if test="${buyList ==null }">
+	<c:if test="${buyList == null }">
 		<section class="div_empty">
 			주문 정보가 없습니다.
 		</section>
 	</c:if>
 	<nav id="commandList">
-		<a href="puppyList.pu">[계속 둘러보기]</a>
+		<a href="puppyList.pu">[쇼핑 계속하기]</a>&nbsp;&nbsp;&nbsp;
+		<a href="puppyCartList.pu">[장바구니]</a>
 	</nav>
 </section>
 </body>

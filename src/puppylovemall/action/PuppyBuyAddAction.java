@@ -10,6 +10,7 @@ import common.Action;
 import common.ActionForward;
 import puppylovemall.svc.PuppyBuyAddService;
 import puppylovemall.svc.PuppyCartAddService;
+import puppylovemall.svc.PuppyCartRemoveService;
 import puppylovemall.vo.Buy;
 import puppylovemall.vo.Cart;
 
@@ -27,12 +28,12 @@ public class PuppyBuyAddAction implements Action{
 			out.println("location.href='puppyList.pu';");
 			out.println("</script>");
 			return null;
-		} else {
+		} else {			
+			//
+			String[] idArray = request.getParameterValues("check");
 			PuppyBuyAddService puppyBuyAddService = new PuppyBuyAddService();
-			
-			Buy buy = new Buy();
-			
-			int listCount = puppyBuyAddService.addBuy(buy);
+			//buy테이블에 추가
+			int listCount = puppyBuyAddService.addBuy(idArray, mid);
 			ActionForward forward = null;
 			
 			if(listCount > 0){

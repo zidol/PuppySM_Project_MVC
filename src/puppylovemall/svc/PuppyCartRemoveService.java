@@ -21,7 +21,7 @@ public class PuppyCartRemoveService {
 			for(int j=0; j<cartList.size(); j++) {
 				int pid = Integer.parseInt(idArray[i]);
 				if(cartList.get(j).getPid() == pid) {
-					count = cartDAO.DeleteCart(cartList.get(j).getPid(), mid);
+					count = cartDAO.deleteCart(cartList.get(j).getPid(), mid);
 				}
 			}
 		}

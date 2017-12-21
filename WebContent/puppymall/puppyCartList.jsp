@@ -6,10 +6,21 @@
 <head>
 <meta charset="UTF-8">
 <title>장바구니 목록</title>
+<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+   	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Custom fonts for this template-->
+	  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <!-- Page level plugin CSS-->
+	  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	  <!-- Custom styles for this template-->
+	  <link href="css/sb-admin.css" rel="stylesheet">
 <style type="text/css">
 	#listForm{
 		width: 640px;
-		border: 1px red solid;
 		margin: auto;
 	}
 	
@@ -104,7 +115,7 @@ function checkQtyUp(pid, qty) {
 	<c:if test="${cartList != null && cartList.size()>0}">
 		<h2>장바구니</h2>
 		<form method="post">
-		<table>
+		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 			<tr id="select">
 				<td colspan="6" align="right">
 				<select id="startMoney" name="startMoney">
@@ -444,7 +455,7 @@ function checkQtyUp(pid, qty) {
 			<c:forEach var="cart" items="${cartList }" varStatus="status">
 				<tr>
 					<td>
-						<input type="checkbox" id="remove" name="remove" value="${cart.pid }"/>
+						<input type="checkbox" id="remove" name="check" value="${cart.pid }"/>
 					</td>
 					<td>
 					${status.index+1 }<!-- 번호값 계산 -->
@@ -489,8 +500,9 @@ function checkQtyUp(pid, qty) {
 		</section>
 	</c:if>
 	<nav id="commandList">
-		<a href="puppyList.pu">[계속 둘러보기]</a>
+		<a href="puppyList.pu">[쇼핑 계속하기]</a>
 		<a href="puppyCartList.pu">[전체보기]</a>
+		<a href="puppyBuyList.pu">[주문 목록보기]</a>
 	</nav>
 </section>
 </body>

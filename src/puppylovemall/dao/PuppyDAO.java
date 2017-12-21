@@ -122,15 +122,16 @@ public class PuppyDAO {
 			
 			if(rs.next()) {
 				puppy = new Puppy(
-						rs.getInt("id")
-						,rs.getString("kind")
-						,rs.getInt("price")
-						,rs.getString("image")
-						,rs.getString("country")
-						,rs.getInt("height")
-						,rs.getInt("weight")
-						,rs.getString("content")
-						,rs.getInt("readcount"));
+						rs.getInt("id"),
+						rs.getString("kind"),
+						rs.getInt("price"),
+						rs.getString("image"),
+						rs.getString("country"),
+						rs.getInt("height"),
+						rs.getInt("weight"),
+						rs.getString("content"),
+						rs.getInt("readcount")
+					);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

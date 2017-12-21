@@ -83,7 +83,7 @@ public class CartDAO {
 			}
 			return insertCount;
 		}
-
+		
 		//Cart 리스트 보기.	
 		public List<Cart> selectCartList(String mid){
 
@@ -161,7 +161,7 @@ public class CartDAO {
 		return updateCount;
 	}
 	// Cart 테이블 데이터 삭제
-	public int DeleteCart(int pid, String mid) {
+	public int deleteCart(int pid, String mid) {
 		PreparedStatement pstmt = null;
 		int deleteCount = 0;
 		String sql ="";

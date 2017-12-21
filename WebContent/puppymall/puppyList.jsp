@@ -30,6 +30,13 @@ String[]icons = {
 
     <!-- Custom styles for this template -->
     <link href="css/shop-homepage.css" rel="stylesheet">
+   	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Custom fonts for this template-->
+	  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <!-- Page level plugin CSS-->
+	  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	  <!-- Custom styles for this template-->
+	  <link href="css/sb-admin.css" rel="stylesheet">
 	<style type="text/css">
 		#pageList{
 			text-align: center;
@@ -56,7 +63,7 @@ String[]icons = {
 		
 	</style>
   </head>
-  <body>
+  <body id="page-top">
   <div id="main-header">
   	<h1 id="main_title">Puppy Love Mall</h1>
   </div>
@@ -69,18 +76,14 @@ String[]icons = {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
             <!-- 아이디가 널일때 -->
               <c:if test="${sessionScope.id == null}">
-	              <a class="nav-link" href="memberLogin.me">Login
-	                <span class="sr-only">(current)</span>
-	              </a>
+	              <a class="nav-link" href="memberLogin.me">Login</a>
               </c:if>
               <!-- 아이디가 널 아닐떄 -->
               <c:if test="${sessionScope.id != null}">
-	              <a class="nav-link" href="memberLogoutAction.me">Logout
-	                <span class="sr-only">(current)</span>
-	              </a>
+	              <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
               </c:if>
             </li>
             <!-- admin(관리자)일 때  -->
@@ -101,8 +104,14 @@ String[]icons = {
             <li class="nav-item">
               <a class="nav-link" href="puppyCartList.pu">Cart</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MyPage</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              <span class="nav-link-text">MyPage</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              	<a class="dropdown-item" href="puppyBuyList.pu">주문배송 조회</a>
+              	<a class="dropdown-item" href="puppyCarList.pu">가입정보 확인</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Wish List</a>
@@ -110,11 +119,14 @@ String[]icons = {
             <li class="nav-item">
               <a class="nav-link" href="#">Notice</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="boardList.boq">Q&A</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="boardList.bor">Review</a>
+            <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              <span class="nav-link-text">Board</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              	<a class="dropdown-item" href="boardList.boq">Q&A</a>
+              	<a class="dropdown-item" href="boardList.bor">Review</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -246,7 +258,7 @@ String[]icons = {
 	<br>
       </div>
       <!-- /.row -->
-
+    </div>
     </div>
     <!-- /.container -->
 
@@ -257,11 +269,42 @@ String[]icons = {
       </div>
       <!-- /.container -->
     </footer>
-
+     <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+	<!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">"Logout"을 누르시면 로그아웃이 됩니다.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="memberLogoutAction.me">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+	 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
   </body>
 
 </html>
