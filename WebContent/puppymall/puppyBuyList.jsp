@@ -125,7 +125,7 @@ function checkQtyUp(pid, qty) {
 			<c:forEach var="buy" items="${buyList }" varStatus="status">
 				<tr>
 					<td>
-						<input type="checkbox" id="remove" name="remove" value="${buy.buy_id }"/>
+						<input type="checkbox" id="remove" name=check value="${buy.buy_id }"/>
 					</td>
 					<td>${buy.buy_id }</td>
 					<td><img src="images/${buy.image }" id="buyImage"/></td>
@@ -143,8 +143,7 @@ function checkQtyUp(pid, qty) {
 				</tr>
 				<tr>
 					<td colspan="8" style="text-align: center;">
-						<input type="submit" value="주문" formaction="puppyBuyList.pu"/>
-						<input type="submit" value="삭제" formaction="puppyCartRemove.pu"/>
+						<input type="submit" value="삭제" formaction="puppyBuyRemove.pu"/>
 					</td>
 				</tr>
 		</table>

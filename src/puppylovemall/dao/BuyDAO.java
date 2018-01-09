@@ -174,4 +174,24 @@ public class BuyDAO {
 		return deleteCount;
 	}
 	
+	// Buy 테이블 데이터 삭제
+		public int deleteBuy(int buy_id, String mid) {
+			PreparedStatement pstmt = null;
+			int deleteCount = 0;
+			String sql ="";
+			
+			try {
+				sql = "delete from buy where buy_id=? and mid=?";
+				pstmt = con.prepareStatement(sql);
+				pstmt.setInt(1, buy_id);
+				pstmt.setString(2, mid);
+				deleteCount = pstmt.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				close(pstmt);
+			}
+			return deleteCount;
+		}
+	
 }

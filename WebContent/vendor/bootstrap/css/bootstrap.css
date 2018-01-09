@@ -4763,8 +4763,7 @@ tbody.collapse.show {
 }
 
 .list-group-item:focus, .list-group-item:hover {
-  text-decoration: none;
-  background-color: #007bff;
+  text-decoration:none;
 }
 
 .list-group-item.disabled, .list-group-item:disabled {

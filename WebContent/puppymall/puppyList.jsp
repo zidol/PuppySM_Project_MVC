@@ -101,14 +101,15 @@ String[]icons = {
               <a class="nav-link" href="memberJoin.me">Members</a>
             </li>
             </c:if>
-            <li class="nav-item">
+           <!--  <li class="nav-item">
               <a class="nav-link" href="puppyCartList.pu">Cart</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <span class="nav-link-text">MyPage</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              	<a class="dropdown-item" href="puppyCartList.pu">장바구니</a>
               	<a class="dropdown-item" href="puppyBuyList.pu">주문배송 조회</a>
               	<a class="dropdown-item" href="puppyCarList.pu">가입정보 확인</a>
               </div>
@@ -138,7 +139,7 @@ String[]icons = {
 
       <div class="row">
 
-        <div class="col-lg-2">
+        <div class="col-lg-3">
 
           <h6 class="my-4">품종별 리스트</h6>
           <div class="list-group">

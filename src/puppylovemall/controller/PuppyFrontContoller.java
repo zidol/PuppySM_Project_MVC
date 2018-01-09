@@ -13,6 +13,7 @@ import common.Action;
 import common.ActionForward;
 import puppylovemall.action.PuppyBuyAddAction;
 import puppylovemall.action.PuppyBuyListAction;
+import puppylovemall.action.PuppyBuyRemoveAction;
 import puppylovemall.action.PuppyCartAddAction;
 import puppylovemall.action.PuppyCartListAction;
 import puppylovemall.action.PuppyCartQtyDownAction;
@@ -20,7 +21,6 @@ import puppylovemall.action.PuppyCartQtyUpAction;
 import puppylovemall.action.PuppyCartRemoveAction;
 import puppylovemall.action.PuppyCartSearchAction;
 import puppylovemall.action.PuppyListAction;
-import puppylovemall.action.PuppyRegistAction;
 import puppylovemall.action.PuppyRegistFormAction;
 import puppylovemall.action.PuppyViewAction;
 
@@ -118,8 +118,15 @@ public class PuppyFrontContoller extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if(command.equals("/puppyRegist.pu")) {
-			action = new PuppyRegistAction();
+		} else if(command.equals("/puppyBuyList.pu")) {
+			action = new PuppyBuyListAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if(command.equals("/puppyBuyRemove.pu")) {
+			action = new PuppyBuyRemoveAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
