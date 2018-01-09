@@ -111,7 +111,7 @@ String[]icons = {
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               	<a class="dropdown-item" href="puppyCartList.pu">장바구니</a>
               	<a class="dropdown-item" href="puppyBuyList.pu">주문배송 조회</a>
-              	<a class="dropdown-item" href="puppyCarList.pu">가입정보 확인</a>
+              	<a class="dropdown-item" href="memberInfoViewAction.me?id=${id}">가입정보 확인</a>
               </div>
             </li>
             <li class="nav-item">

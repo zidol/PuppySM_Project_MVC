@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import common.Action;
 import common.ActionForward;
 import member.action.MemberDeleteAction;
+import member.action.MemberInfoViewAction;
 import member.action.MemberJoinAction;
 import member.action.MemberListAction;
 import member.action.MemberLoginAction;
@@ -77,6 +78,13 @@ public class MemberFrontController extends HttpServlet {
 			}
 		} else if(command.equals("/memberViewAction.me")) {
 			action = new MemberViewAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(command.equals("/memberInfoViewAction.me")) {
+			action = new MemberInfoViewAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
