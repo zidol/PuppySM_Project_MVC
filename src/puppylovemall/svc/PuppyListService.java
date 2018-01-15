@@ -24,13 +24,13 @@ public class PuppyListService {
 		
 	}
 
-	public List<Puppy> getPuppyList(int page, int limit) throws Exception{
+	public List<Puppy> getPuppyList(String kind, int page, int limit) throws Exception{
 		
 		List<Puppy> puppyList = null;
 		Connection con = getConnection();
 		PuppyDAO puppyDAO = PuppyDAO.getInstance();
 		puppyDAO.setConnection(con);
-		puppyList = puppyDAO.selectPuppyList(page,limit);
+		puppyList = puppyDAO.selectPuppyList(kind,page,limit);
 		close(con);
 		return puppyList;
 		

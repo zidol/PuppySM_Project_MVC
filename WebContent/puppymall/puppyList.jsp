@@ -70,7 +70,7 @@ String[]icons = {
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Puppy Love Mall</a>
+        <a class="navbar-brand" href="puppyList.pu?kind=all">Puppy Love Mall</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -143,14 +143,13 @@ String[]icons = {
 
           <h6 class="my-4">품종별 리스트</h6>
           <div class="list-group">
-            <a href="#" class="list-group-item">말티즈</a>
-            <a href="#" class="list-group-item">요크셔테리어</a>
-            <a href="#" class="list-group-item">푸들</a>
-            <a href="#" class="list-group-item">시츄</a>
-            <a href="#" class="list-group-item">포메리안</a>
-            <a href="#" class="list-group-item">치와와</a>
-            <a href="#" class="list-group-item">스피츠</a>
-            <a href="#" class="list-group-item">기타</a>
+          <a href="puppyList.pu?kind=all" class="list-group-item">전체목록</a>
+            <a href="puppyList.pu?kind=몰티즈" class="list-group-item">말티즈</a>
+            <a href="puppyList.pu?kind=요크셔테리어" class="list-group-item">요크셔테리어</a>
+            <a href="puppyList.pu?kind=푸들" class="list-group-item">푸들</a>
+            <a href="puppyList.pu?kind=시추" class="list-group-item">시추</a>
+            <a href="puppyList.pu?kind=포메리안" class="list-group-item">포메리안</a>
+            <a href="puppyList.pu?kind=치와와" class="list-group-item">치와와</a>
           </div>
           
           <h6 class="my-4">가격대별 리스트</h6>
@@ -201,7 +200,7 @@ String[]icons = {
 
           <div class="row">
 			
-<!--  -->	
+		<!--  -->	
 			<c:forEach var="puppy" items="${puppyList }" varStatus="status">
             <div class="col-lg-3 col-md-4 mb-5">
               <div class="card h-100">
@@ -220,7 +219,7 @@ String[]icons = {
               </div>
             </div>
             </c:forEach>
-<!--  -->
+			<!--  -->
 
           <!-- /.row -->
 	
@@ -232,7 +231,7 @@ String[]icons = {
 		[이전]&nbsp;
 	</c:when>
 	<c:otherwise>
-		<a href="puppyList.pu?page=${pageInfo.page-1 }">[이전]</a>&nbsp;
+		<a href="puppyList.pu?kind=${kind }&page=${pageInfo.page-1 }">[이전]</a>&nbsp;
 	</c:otherwise>
 	</c:choose>
 	
@@ -242,7 +241,7 @@ String[]icons = {
 			[${a }]&nbsp;
 		</c:when>
 		<c:otherwise>
-			<a href="puppyList.pu?page=${a }">[${a}]</a>&nbsp;
+			<a href="puppyList.pu?kind=${kind }&page=${a }">[${a}]</a>&nbsp;
 		</c:otherwise>
 		</c:choose>
 	</c:forEach>
@@ -252,7 +251,7 @@ String[]icons = {
 		[다음]
 	</c:when>
 	<c:otherwise>
-		<a href="puppyList.pu?page=${pageInfo.page+1}">[다음]</a>
+		<a href="puppyList.pu?kind=${kind }&page=${pageInfo.page+1}">[다음]</a>
 	</c:otherwise>
 	</c:choose>
 </section>

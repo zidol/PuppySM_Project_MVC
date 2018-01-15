@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-<%response.sendRedirect("puppyList.pu"); %>
+<%response.sendRedirect("puppyList.pu?kind=all"); %>
 <!-- <a href="puppyList.pu">메인리스트</a>
 <a href="puppyRegistForm.pu">강아지등록</a>
 <a href="memberLogin.me">로그인</a> -->

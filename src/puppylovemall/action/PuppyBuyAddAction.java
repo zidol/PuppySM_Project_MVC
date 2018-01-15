@@ -25,7 +25,7 @@ public class PuppyBuyAddAction implements Action{
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
 			out.println("alert('구매정보를 보려면 로그인을 해주세요.');");
-			out.println("location.href='puppyList.pu';");
+			out.println("location.href='puppyList.pu?kind=all';");
 			out.println("</script>");
 			return null;
 		} else {			

@@ -24,7 +24,7 @@ public class PuppyCartAddAction implements Action{
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
 			out.println("alert('장바구니에 담으려면 로그인을 해주세요.');");
-			out.println("location.href='puppyList.pu';");
+			out.println("location.href='puppyList.pu?kind=all';");
 			out.println("</script>");
 			return null;
 		} else {

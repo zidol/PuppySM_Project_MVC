@@ -17,7 +17,7 @@ public class PuppyListAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
+
 		
 		//쿠키를 통해서 오늘 본 상품
 		List<String> todayImageList = new ArrayList<String>();
@@ -58,12 +58,21 @@ public class PuppyListAction implements Action{
 		pageInfo.setPage(page);
 		pageInfo.setStartPage(startPage);
 			
-		
-		
-		List<Puppy>puppyList = puppyListService.getPuppyList(page,limit); //리스트를 받아옴.
+		String kindName = "";
+		String kind= request.getParameter("kind");
+		List<Puppy>puppyList = puppyListService.getPuppyList(kind, page, limit); //리스트를 받아옴.
+		if (kind.equals("몰티즈"))
+			kindName = "몰티즈";
+		else if (kind.equals("요크셔테리어"))
+			kindName = "요크셔테리어";
+		else if (kind.equals("시추"))
+			kindName = "시추";
+		else if (kind.equals("all"))
+			kindName = "all";
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("puppyList", puppyList);
 		request.setAttribute("todayImageList", todayImageList);
+		request.setAttribute("kind", kind);
 		ActionForward forward = new ActionForward("puppymall/puppyList.jsp", false);
 		return forward;
 	}

@@ -21,7 +21,7 @@ public class MemberLogoutAction implements Action{
 		PrintWriter out = response.getWriter();
 		out.println("<script>");
 		out.println("alert('로그아웃 되었습니다.');");
-		out.println("location.href='puppyList.pu';");
+		out.println("location.href='puppyList.pu?kind=all';");
 		out.println("</script>");
 		/*forward.setRedirect(true);
 		forward.setPath("puppyList.pu");*/

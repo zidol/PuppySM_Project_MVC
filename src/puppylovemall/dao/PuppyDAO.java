@@ -61,7 +61,7 @@ public class PuppyDAO {
 		}
 
 		//글 목록 보기.	
-		public List<Puppy> selectPuppyList(int page,int limit){
+		public List<Puppy> selectPuppyList(String kind, int page,int limit){
 
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
@@ -69,9 +69,13 @@ public class PuppyDAO {
 //			String board_list_sql="select * from board order by BOARD_RE_REF desc,BOARD_RE_SEQ asc limit ?,10";
 			
 //			Oracle 몇번 부터 몇번까지
-			String puppy_list_sql="select * from "
+			String puppy_list_sql1="select * from "
 					+ "(select rownum as rnum, pu.* "
 					+ "from (select * from puppy order by id desc) pu) "
+					+ "where rnum between ? and ?";
+			String puppy_list_sql2="select * from "
+					+ "(select rownum as rnum, pu.* "
+					+ "from (select * from puppy where kind=? order by id desc) pu) "
 					+ "where rnum between ? and ?";
 			List<Puppy> puppyList = new ArrayList<Puppy>();
 			Puppy puppy = null;
@@ -79,9 +83,16 @@ public class PuppyDAO {
 			int endrow = page*limit;
 
 			try{
-				pstmt = con.prepareStatement(puppy_list_sql);
-				pstmt.setInt(1, startrow);
-				pstmt.setInt(2, endrow);
+				if(kind.equals("all")) {
+					pstmt = con.prepareStatement(puppy_list_sql1);
+					pstmt.setInt(1, startrow);
+					pstmt.setInt(2, endrow);
+				} else {
+					pstmt = con.prepareStatement(puppy_list_sql2);
+					pstmt.setString(1, kind);
+					pstmt.setInt(2, startrow);
+					pstmt.setInt(3, endrow);
+				}
 				rs = pstmt.executeQuery();
 
 				while(rs.next()){

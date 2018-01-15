@@ -26,7 +26,7 @@ public class MemberListAction implements Action{
 		} else if(!id.equals("admin")){ // 아이디가 관리자가 아닐떄
 			forward = new ActionForward();
 			forward.setRedirect(true);
-			forward.setPath("puppyList.pu");
+			forward.setPath("puppyList.pu?kind=all");
 		} else {	//아이디가 관리자일때
 			forward = new ActionForward();
 			MemberListService memberListService = new MemberListService();

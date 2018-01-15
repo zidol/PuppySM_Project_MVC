@@ -170,7 +170,7 @@ body{
 					<!-- <input type="button" value="로그인" onclick="location.href='javascript:loginform.submit()'"> -->
 					<input type="submit" value="로그인">
 					<input type="button" value="회원가입" onclick="location.href='../memberJoin.me'">
-					<input type="button" value="홈으로" onclick="location.href='../puppyList.pu'">
+					<input type="button" value="홈으로" onclick="location.href='../puppyList.pu?kind=all'">
 				</form>
 		</div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
