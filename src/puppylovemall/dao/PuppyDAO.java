@@ -32,18 +32,23 @@ public class PuppyDAO {
 	}
 	
 	
-	//글의 개수 구하기.
-		public int selectListCount() {
+	//강아지수 구하기.
+		public int selectListCount(String kind) {
 
 			int listCount= 0;
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
+			String sql1 = "select count(*) from puppy order by id desc";
+			String sql2 = "select count(*) from puppy where kind=? order by id desc";
 
 			try{
-
-
 				System.out.println("getConnection");
-				pstmt=con.prepareStatement("select count(*) from puppy");
+				if(kind.equals("all")) {
+					pstmt=con.prepareStatement(sql1);
+				}else {
+					pstmt=con.prepareStatement(sql2);
+					pstmt.setString(1, kind);
+				}
 				rs = pstmt.executeQuery();
 
 				if(rs.next()){

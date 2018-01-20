@@ -21,6 +21,7 @@ import puppylovemall.action.PuppyCartQtyUpAction;
 import puppylovemall.action.PuppyCartRemoveAction;
 import puppylovemall.action.PuppyCartSearchAction;
 import puppylovemall.action.PuppyListAction;
+import puppylovemall.action.PuppyRegistAction;
 import puppylovemall.action.PuppyRegistFormAction;
 import puppylovemall.action.PuppyViewAction;
 
@@ -134,6 +135,13 @@ public class PuppyFrontContoller extends HttpServlet {
 			}
 		} else if(command.equals("/puppyRegistForm.pu")) {
 			action = new PuppyRegistFormAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if(command.equals("/puppyRegist.pu")) {
+			action = new PuppyRegistAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {

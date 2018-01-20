@@ -42,7 +42,7 @@
 		<table>
 			<tr>
 				<td colspan="2">
-					<a href="puppyList.pu">목록보기</a>
+					<a href="puppyList.pu?kind=all">목록보기</a>
 				</td>
 			</tr>
 			<tr>
@@ -112,7 +112,7 @@
 				<td colspan="2" id="commandCell">
 					<input type="submit" value="강아지 등록"/>
 					<input type="reset" value="다시 작성"/>
-					<input type="button" value="강아지 목록" onclick="window.location.href='puppyList.pu'"/>
+					<input type="button" value="강아지 목록" onclick="window.location.href='puppyList.pu?kind=all'"/>
 				</td>
 			</tr>			
 		</table>

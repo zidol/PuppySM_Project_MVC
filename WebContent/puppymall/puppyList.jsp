@@ -151,16 +151,7 @@ String[]icons = {
             <a href="puppyList.pu?kind=포메리안" class="list-group-item">포메리안</a>
             <a href="puppyList.pu?kind=치와와" class="list-group-item">치와와</a>
           </div>
-          
-          <h6 class="my-4">가격대별 리스트</h6>
-          <div class="list-group">
-            <a href="#" class="list-group-item">100,000~200,000</a>
-            <a href="#" class="list-group-item">200,000~400,000</a>
-            <a href="#" class="list-group-item">400,000~600,000</a>
-            <a href="#" class="list-group-item">600,000~800,000</a>
-            <a href="#" class="list-group-item">800,000~1,000,000</a>
-            <a href="#" class="list-group-item">1,000,000이상</a>
-          </div>
+
 
         </div>
         <!-- /.col-lg-3 -->

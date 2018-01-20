@@ -37,7 +37,7 @@
 		</c:forEach>
 		<tr>
 			<td colspan="2">
-				<a href="puppyList.pu">메인으로 돌아가기</a>
+				<a href="puppyList.pu?kind=all">메인으로 돌아가기</a>
 			</td>
 		</tr>	
 	</table>

@@ -34,13 +34,13 @@ public class PuppyListAction implements Action{
 //		List<Puppy> puppyList=new ArrayList<Puppy>();
 	  	int page=1;
 		int limit=12;//페이지당 글 갯수 
-		
+		String kind= request.getParameter("kind");
 		if(request.getParameter("page")!=null){
 			page = Integer.parseInt(request.getParameter("page"));
 		}
 		
 		PuppyListService puppyListService = new PuppyListService();
-		int listCount = puppyListService.getListCount(); //총 리스트 수를 받아옴.
+		int listCount = puppyListService.getListCount(kind); //총 리스트 수를 받아옴.
 		System.out.println("입력수 : " + listCount);
 		//총 페이지 수.
    		int maxPage=(int)((double)listCount/limit+0.95); //0.95를 더해서 올림 처리.
@@ -58,17 +58,17 @@ public class PuppyListAction implements Action{
 		pageInfo.setPage(page);
 		pageInfo.setStartPage(startPage);
 			
-		String kindName = "";
-		String kind= request.getParameter("kind");
+//		String kindName = "";
+		
 		List<Puppy>puppyList = puppyListService.getPuppyList(kind, page, limit); //리스트를 받아옴.
-		if (kind.equals("몰티즈"))
+		/*if (kind.equals("몰티즈"))
 			kindName = "몰티즈";
 		else if (kind.equals("요크셔테리어"))
 			kindName = "요크셔테리어";
 		else if (kind.equals("시추"))
 			kindName = "시추";
 		else if (kind.equals("all"))
-			kindName = "all";
+			kindName = "all";*/
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("puppyList", puppyList);
 		request.setAttribute("todayImageList", todayImageList);

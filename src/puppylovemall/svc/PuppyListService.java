@@ -11,14 +11,14 @@ import puppylovemall.vo.Puppy;
 
 public class PuppyListService {
 	
-	public int getListCount() throws Exception{
+	public int getListCount(String kind) throws Exception{
 		// TODO Auto-generated method stub
 		
 		int listCount = 0;
 		Connection con = getConnection();
 		PuppyDAO puppyDAO = PuppyDAO.getInstance();
 		puppyDAO.setConnection(con);
-		listCount = puppyDAO.selectListCount();
+		listCount = puppyDAO.selectListCount(kind);
 		close(con);
 		return listCount;
 		
