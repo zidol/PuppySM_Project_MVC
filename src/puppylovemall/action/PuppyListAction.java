@@ -33,7 +33,7 @@ public class PuppyListAction implements Action{
 		// 상품리스트 페이징 처리
 //		List<Puppy> puppyList=new ArrayList<Puppy>();
 	  	int page=1;
-		int limit=12;//페이지당 글 갯수 
+		int limit=8;//페이지당 글 갯수 
 		String kind= request.getParameter("kind");
 		if(request.getParameter("page")!=null){
 			page = Integer.parseInt(request.getParameter("page"));

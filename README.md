@@ -6,7 +6,12 @@
   <li><h3>작품소개 : Apache Tomcat을 통해 DB에 연동한 MVC 패턴의  프로젝트</h3></li>
 </ul>
 <h2>쇼핑몰 메인페이지 이미지</h2> 
-<img src="/img/puppymall_main.jpg" width="90%" height="90%">
+<img src="/img/puppymall_main2.jpg" width="90%" height="90%">
+<ul>
+	<li>puppyList.jsp</li>
+	<li>puppyListAction.java</li>
+	<li>puppyListService.java</li>
+</ul>
 <h2>로그인 페이지</h2>
 <img src="/img/login_img.jpg" width="90%" height="90%">
 

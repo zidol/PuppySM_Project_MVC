@@ -29,7 +29,7 @@ public class MemberLoginAction implements Action{
 			forward = new ActionForward();
 			session.setAttribute("id", member.getId());
 			forward.setRedirect(true);
-			forward.setPath("memberListAction.me");
+			forward.setPath("puppyList.pu?kind=all");
 		} else {
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();

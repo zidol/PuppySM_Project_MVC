@@ -55,7 +55,7 @@
 		</tr>
 		<tr>
 			<td colspan="2">
-				<a href="puppyList.pu">메인으로</a>
+				<a href="puppyList.pu?kind=all">메인으로</a>
 			</td>
 		</tr>
 	</table>
