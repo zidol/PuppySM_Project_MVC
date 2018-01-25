@@ -5,6 +5,18 @@
 <head>
 <meta charset="UTF-8" />
 <title>MVC 게시판</title>
+<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+   	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Custom fonts for this template-->
+	  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <!-- Page level plugin CSS-->
+	  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	  <!-- Custom styles for this template-->
+	  <link href="css/sb-admin.css" rel="stylesheet">
 <style type="text/css">
 #registForm {
 	width: 500px;
@@ -21,8 +33,9 @@ table {
 	border-collapse: collapse;
 }
 #tr_top {
-	background: orange;
+	background-color: rgb(52,58,64);
 	text-align: center;
+	color: white;
 }
 #pageList {
 	margin: auto;
@@ -44,6 +57,7 @@ a {
 <section id="listForm">
 	<h2>Review게시판</h2>
 	<h4><a href="boardWriteForm.bor">게시판 글쓰기</a></h4>
+	<h4><a href="puppyList.pu?kind=all">메인으로</a></h4>
 	<table>
 <c:if test="${articleList != null && pageInfo.listCount > 0 }">
 		<tr id="tr_top">

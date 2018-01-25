@@ -155,7 +155,7 @@ function checkQtyUp(pid, qty) {
 		</section>
 	</c:if>
 	<nav id="commandList">
-		<a href="puppyList.pu">[쇼핑 계속하기]</a>&nbsp;&nbsp;&nbsp;
+		<a href="puppyList.pu?kind=all">[쇼핑 계속하기]</a>&nbsp;&nbsp;&nbsp;
 		<a href="puppyCartList.pu">[장바구니]</a>
 	</nav>
 </section>
