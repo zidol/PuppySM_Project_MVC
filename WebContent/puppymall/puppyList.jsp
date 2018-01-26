@@ -114,12 +114,6 @@ String[]icons = {
               	<a class="dropdown-item" href="memberInfoViewAction.me?id=${id}">가입정보 확인</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Wish List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notice</a>
-            </li>
             <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <span class="nav-link-text">Board</span>
@@ -163,7 +157,6 @@ String[]icons = {
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
@@ -174,9 +167,6 @@ String[]icons = {
               </div>
               <div class="carousel-item">
                 <img class="d-block img-fluid" src="images/big.jpg" style="height: 350px; width: 900px;" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

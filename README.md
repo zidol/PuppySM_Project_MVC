@@ -52,17 +52,38 @@
 	<li><h4>주문배송 조회</h4></li>
 	<li><h4>가입정보 확인</h4></li>
 </ul>
-
 <h2>강아지 찜하기</h2>
 <img src="/img/cartlist.jpg" width="90%" height="90%">
 <h4>cart테이블에 강아지 찜 목록 저장</h4>
 <h4>적용파일</h4>
 <ul>
 	<li><h4>puppyCartList.jsp</h4></li>
-	<li><h4>PuppyCartListAction</h4></li>
-	<li><h4>PuppyCartQtyDownService</h4></li>
-	<li><h4>PuppyCartQtyUpAction</h4></li>
-	<li><h4>PuppyCartListService</h4></li>
-	<li><h4>PuppyCartQtyDownService</h4></li>
-	<li><h4>PuppyCartQtyUpService</h4></li>
+	<li><h4>PuppyCartListAction.java</h4></li>
+	<li><h4>PuppyCartQtyDownService.java</h4></li>
+	<li><h4>PuppyCartQtyUpAction.java</h4></li>
+	<li><h4>PuppyCartListService.java</h4></li>
+	<li><h4>PuppyCartQtyDownService.java</h4></li>
+	<li><h4>PuppyCartQtyUpService.java</h4></li>
 </ul>
+<h4>삭제 버튼 적용 파일</h4>
+<ul>
+	<li><h4>PuppyCartRemoveAction.java</h4></li>
+	<li><h4>PuppyCartRemoveService.java</h4></li>
+</ul>
+
+<h2>강아지 주문하기</h2>
+<img src="/img/buylist.jpg" width="90%" height="90%">
+<h4>cart테이블에 강아지 찜 목록 저장</h4>
+<h4>적용파일</h4>
+<ul>
+	<li><h4>puppyBuyList.jsp</h4></li>
+	<li><h4>PuppyBuyAddAction.java</h4></li>
+	<li><h4>PuppyBuyListService.java</h4></li>
+	<li><h4>PuppyBuyAddService.java</h4></li>
+</ul>
+<h4>삭제 버튼 적용 파일</h4>
+<ul>
+	<li><h4>PuppyBuyRemoveAction.java</h4></li>
+	<li><h4>PuppyBuytRemoveService.java</h4></li>
+</ul>
+

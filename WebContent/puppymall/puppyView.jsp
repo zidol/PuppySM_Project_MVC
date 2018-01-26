@@ -56,27 +56,6 @@
 </style>
 </head>
 <body id="page-top">
-<!-- <section id="listForm"> -->
-	<%-- <h2>${puppy.kind }의 상세 정보</h2> --%>
-	
-	<!-- <section id="content_main"> -->
-		<%-- <section id="content_left">
-			<img src="images/${puppy.image }" align="middle">
-		</section> --%>
-		<!-- <section id="content_right"> -->
-			<%-- <b>품종 : </b> ${puppy.kind }<br>
-			<b>가격 : </b> ${puppy.price }<br>
-			<b>신장 : </b> ${puppy.height }<br>
-			<b>체중 : </b> ${puppy.weight }<br>
-			<b>원산지 : </b> ${puppy.country }<br>
-			<p id="desc">
-			<b>내용 : </b> ${puppy.content }<br>
-			</p> --%>
-		<!-- Page Content -->
-<!--   <div id="main-header">
-  	<h1 id="main_title">Puppy Love Mall</h1>
-  </div> -->
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="puppyList.pu?kind=all">Puppy Love Mall</a>
@@ -122,12 +101,6 @@
               	<a class="dropdown-item" href="puppyBuyList.pu">주문배송 조회</a>
               	<a class="dropdown-item" href="memberInfoViewAction.me?id=${id}">가입정보 확인</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Wish List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notice</a>
             </li>
             <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
