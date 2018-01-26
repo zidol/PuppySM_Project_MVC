@@ -11,7 +11,9 @@
 <img src="/img/puppymall_main3.jpg" width="90%" height="90%">
 전체리스트(전체 목록 페이징 처리)
  <img src="/img/kindlist.jpg" width="90%" height="90%">
- <video src="/img/스크롤업.mp4"></video>
+ <video>
+ 	<source src="/img/스크롤업.mp4" type="video/mp4">
+ </video>
 종류별 리스트(각각 종류별 페이징 처리)
 <h4>적용 파일</h4>
 <ul>
