@@ -8,8 +8,9 @@
 </ul>
 <h2>쇼핑몰 메인페이지 이미지</h2> 
 <img src="/img/puppymall_main2.jpg" width="90%" height="90%">
-전체리스트(전체 목록 페이징 처리) 
 <img src="/img/puppymall_main3.jpg" width="90%" height="90%">
+전체리스트(전체 목록 페이징 처리)
+ <img src="/img/kindlist.jpg" width="90%" height="90%">
 종류별 리스트(각각 종류별 페이징 처리)
 <ul>
 	<li><h4>적용 파일</h4></li>
