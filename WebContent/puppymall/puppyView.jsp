@@ -118,7 +118,7 @@
               <span class="nav-link-text">MyPage</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              	<a class="dropdown-item" href="puppyCartList.pu">장바구니</a>
+              	<a class="dropdown-item" href="puppyCartList.pu">강아지 찜하기</a>
               	<a class="dropdown-item" href="puppyBuyList.pu">주문배송 조회</a>
               	<a class="dropdown-item" href="memberInfoViewAction.me?id=${id}">가입정보 확인</a>
               </div>

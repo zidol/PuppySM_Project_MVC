@@ -46,9 +46,23 @@
 </ul>
 <h2>MyPage</h2>
 <img src="/img/mypageList.jpg" width="90%" height="90%">
-<h4>dropdown사용</h4>
+<h4>Dropdown사용</h4>
 <ul>
 	<li><h4>장바구니</h4></li>
 	<li><h4>주문배송 조회</h4></li>
 	<li><h4>가입정보 확인</h4></li>
+</ul>
+
+<h2>강아지 찜하기</h2>
+<img src="/img/cartlist.jpg" width="90%" height="90%">
+<h4>cart테이블에 강아지 찜 목록 저장</h4>
+<h4>적용파일</h4>
+<ul>
+	<li><h4>puppyCartList.jsp</h4></li>
+	<li><h4>PuppyCartListAction</h4></li>
+	<li><h4>PuppyCartQtyDownService</h4></li>
+	<li><h4>PuppyCartQtyUpAction</h4></li>
+	<li><h4>PuppyCartListService</h4></li>
+	<li><h4>PuppyCartQtyDownService</h4></li>
+	<li><h4>PuppyCartQtyUpService</h4></li>
 </ul>
