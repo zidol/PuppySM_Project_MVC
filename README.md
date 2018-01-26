@@ -44,3 +44,11 @@
 	<li><h4>puppyViewAction.java</h4></li>
 	<li><h4>puppyViewService.java</h4></li>
 </ul>
+<h2>MyPage</h2>
+<img src="/img/mypageList.jpg" width="90%" height="90%">
+<h4>dropdown사용</h4>
+<ul>
+	<li><h4>장바구니</h4></li>
+	<li><h4>주문배송 조회</h4></li>
+	<li><h4>가입정보 확인</h4></li>
+</ul>
