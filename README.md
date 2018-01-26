@@ -11,9 +11,6 @@
 <img src="/img/puppymall_main3.jpg" width="90%" height="90%">
 전체리스트(전체 목록 페이징 처리)
  <img src="/img/kindlist.jpg" width="90%" height="90%">
- <video>
- 	<source src="/img/스크롤업.mp4" type="video/mp4">
- </video>
 종류별 리스트(각각 종류별 페이징 처리)
 <h4>적용 파일</h4>
 <ul>
@@ -38,4 +35,12 @@
 	<li><h4>joinForm.jsp</h4></li>
 	<li><h4>MemberJoinAction.java</h4></li>
 	<li><h4>MemberJoinService.java</h4></li>
+</ul>
+<h2>강아지 상세 페이지</h2>
+<img src="/img/puppy_view.jpg" width="90%" height="90%">
+<h4>적용 파일</h4>
+<ul>
+	<li><h4>puppyView.jsp</h4></li>
+	<li><h4>puppyViewAction.java</h4></li>
+	<li><h4>puppyViewService.java</h4></li>
 </ul>
