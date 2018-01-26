@@ -113,7 +113,7 @@ function checkQtyUp(pid, qty) {
 </c:if>
 <section id="listForm">
 	<c:if test="${cartList != null && cartList.size()>0}">
-		<h2>장바구니</h2>
+		<h2>강아지 찜 목록</h2>
 		<form method="post">
 		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 			<tr id="select">
@@ -500,7 +500,7 @@ function checkQtyUp(pid, qty) {
 		</section>
 	</c:if>
 	<nav id="commandList">
-		<a href="puppyList.pu?kind=all">[쇼핑 계속하기]</a>
+		<a href="puppyList.pu?kind=all">[강아지 계속보기]</a>
 		<a href="puppyCartList.pu">[전체보기]</a>
 		<a href="puppyBuyList.pu">[주문 목록보기]</a>
 	</nav>

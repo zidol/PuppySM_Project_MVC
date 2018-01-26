@@ -1,4 +1,4 @@
-<h1> MVC 패턴의 강아지쇼핑몰 프로젝트</h1>
+<h1> MVC 패턴의 강아지분양 사이트 프로젝트</h1>
 <ul>
   <li><h3>작업기간 : (15일) </h3></li>
   <li><h3>작업인원 : 단독작업</h3></li>
@@ -20,6 +20,7 @@
 </ul>
 <h2>로그인 페이지</h2>
 <img src="/img/login_img.jpg" width="90%" height="90%">
+<video src="/img/스크롤업.mp4" control></video>
 <h4>적용 파일</h4>
 <ul>
 	<li><h4>loginForm.jsp</h4></li>
