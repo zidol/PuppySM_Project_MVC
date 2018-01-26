@@ -73,7 +73,7 @@
 
 <h2>강아지 주문하기</h2>
 <img src="/img/buylist.jpg" width="90%" height="90%">
-<h4>cart테이블에 강아지 찜 목록 저장</h4>
+<h4>cart테이블에 강아지 찜 목록 저장, 구매번호 시퀀스로 자동발생 </h4>
 <h4>적용파일</h4>
 <ul>
 	<li><h4>puppyBuyList.jsp</h4></li>
@@ -85,6 +85,16 @@
 <ul>
 	<li><h4>PuppyBuyRemoveAction.java</h4></li>
 	<li><h4>PuppyBuytRemoveService.java</h4></li>
+</ul>
+<h2>가입정보 보기</h2>
+<img src="/img/myinfoadr.jpg">
+<img src="/img/myinfo.jpg">
+<h4>회원 자신 정보 보기,id값 get방식으로 불러와 정보 뿌려주기 </h4>
+<h4>적용파일</h4>
+<ul>
+	<li><h4>getMember_info.jsp</h4></li>
+	<li><h4>MemberInfoViewAction.java</h4></li>
+	<li><h4>MemberInfoViewService.java</h4></li>
 </ul>
 <h2>게시판 리스트</h2>
 <img src="/img/boardlist.jpg" width="90%" height="90%">
