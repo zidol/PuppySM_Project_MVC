@@ -48,7 +48,7 @@
 <img src="/img/mypageList.jpg" width="90%" height="90%">
 <h4>Dropdown사용</h4>
 <ul>
-	<li><h4>장바구니</h4></li>
+	<li><h4>강아지 찜하기</h4></li>
 	<li><h4>주문배송 조회</h4></li>
 	<li><h4>가입정보 확인</h4></li>
 </ul>
