@@ -86,4 +86,31 @@
 	<li><h4>PuppyBuyRemoveAction.java</h4></li>
 	<li><h4>PuppyBuytRemoveService.java</h4></li>
 </ul>
+<h2>게시판 리스트</h2>
+<img src="/img/boardlist.jpg" width="90%" height="90%">
+<h4>Q&A, Review게시판</h4>
+<h4>DropDown사용</h4>
+<ul>
+	<li><h4>puppyBuyList.jsp</h4></li>
+	<li><h4>PuppyBuyAddAction.java</h4></li>
+	<li><h4>PuppyBuyListService.java</h4></li>
+	<li><h4>PuppyBuyAddService.java</h4></li>
+</ul>
+<h4>삭제 버튼 적용 파일</h4>
+<ul>
+	<li><h4>PuppyBuyRemoveAction.java</h4></li>
+	<li><h4>PuppyBuytRemoveService.java</h4></li>
+</ul>
 
+<h2>Q&A, Review 게시판</h2>
+<img src="/img/boardlist.jpg" width="90%" height="90%">
+<h4>DropDown사용</h4>
+<img src="/img/qna.jpg" width="90%" height="90%">
+질문게시판
+<img src="/img/review.jpg" width="90%" height="90%">
+리뷰 게시판
+<img src="/img/boardcontent.jpg" width="90%" height="90%">
+게시글 페이지
+<h4>Q&A, Review게시판의 JSP페이지, Action, Service,각각 따로 사용</h4>
+<img src="/img/boardproejctlist.jpg" width="90%" height="90%">
+<img src="/img/boardjspt.jpg" width="90%" height="90%">
