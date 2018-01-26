@@ -109,8 +109,8 @@
 질문게시판
 <img src="/img/review.jpg" width="90%" height="90%">
 리뷰 게시판
-<img src="/img/boardcontent.jpg" width="90%" height="90%">
+<img src="/img/boardcontent.jpg">
 게시글 페이지
 <h4>Q&A, Review게시판의 JSP페이지, Action, Service,각각 따로 사용</h4>
-<img src="/img/boardproejctlist.jpg" width="90%" height="90%">
-<img src="/img/boardjspt.jpg" width="90%" height="90%">
+<img src="/img/boardproejctlist.jpg" >
+<img src="/img/boardjsp.jpg" >
