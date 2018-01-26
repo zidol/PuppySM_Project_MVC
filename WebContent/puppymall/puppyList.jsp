@@ -98,7 +98,7 @@ String[]icons = {
             <!-- 아이디가 널일 때 -->
             <c:if test="${sessionScope.id == null }">
             <li class="nav-item">
-              <a class="nav-link" href="memberJoin.me">Members</a>
+              <a class="nav-link" href="memberJoin.me">Join</a>
             </li>
             </c:if>
            <!--  <li class="nav-item">
