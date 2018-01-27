@@ -6,6 +6,16 @@
   <li><h3>부트 스트랩 : <a href="https://startbootstrap.com/template-categories/all/">Startbootstrap</a>사용</h3></li>
   <li><h3>작품소개 : Apache Tomcat을 통해 DB에 연동한 MVC 패턴의  프로젝트</h3></li>
 </ul>
+<h2>DB설계</h2> 
+<img src="/img/pyppydb.jpg" width="90%" height="90%">
+강아지 정보DB
+<img src="/img/memberdb.jpg" width="90%" height="90%">
+회원DB
+<img src="/img/cartdb.jpg" width="90%" height="90%">
+강아지찜하기(장바구니기능)DB
+<img src="/img/qnadb.jpg" width="90%" height="90%">
+게시판 DB(Review게시판 동일)
+
 <h2>쇼핑몰 메인페이지 이미지</h2> 
 <img src="/img/puppymall_main2.jpg" width="90%" height="90%">
 <img src="/img/puppymall_main3.jpg" width="90%" height="90%">
@@ -40,6 +50,26 @@
 	<li><h4>joinForm.jsp</h4></li>
 	<li><h4>MemberJoinAction.java</h4></li>
 	<li><h4>MemberJoinService.java</h4></li>
+</ul>
+<h2>Admin(관리자 로그인)</h2>
+<img src="/img/adminlogin.jpg" width="90%" height="90%">
+관리자 로그인시 바뀌는 Navi메뉴
+<img src="/img/memberlist.jpg" width="90%" height="90%">
+회원 리스트 확인 페이지
+<h4>적용 파일</h4>
+<ul>
+	<li><h4>member_list.jsp</h4></li>
+	<li><h4>memberListAction.java</h4></li>
+	<li><h4>memberListService.java</h4></li>
+</ul>
+<img src="/img/registpuppy.jpg" width="90%" height="90%">
+강아지 등록 페이지
+<h4>적용 파일</h4>
+<ul>
+	<li><h4>puppyRegistForm.jsp</h4></li>
+	<li><h4>PuppyRegistAction.java</h4></li>
+	<li><h4>PuppyRegistFormAction.java</h4></li>
+	<li><h4>PuppyRegistService.java</h4></li>
 </ul>
 <h2>강아지 상세 페이지</h2>
 <img src="/img/puppy_view.jpg" width="90%" height="90%">
