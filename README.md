@@ -7,9 +7,9 @@
   <li><h3>작품소개 : Apache Tomcat을 통해 DB에 연동한 MVC 패턴의  프로젝트</h3></li>
 </ul>
 <h2>DB설계</h2> 
-<img src="/img/pyppydb.jpg" width="90%" height="90%">
+<img src="/img/pyppydb1.jpg" width="90%" height="90%">
 강아지 정보DB
-<img src="/img/memberdb.jpg" width="90%" height="90%">
+<img src="/img/memberdb2.jpg" width="90%" height="90%">
 회원DB
 <img src="/img/cartdb.jpg" width="90%" height="90%">
 강아지찜하기(장바구니기능)DB
