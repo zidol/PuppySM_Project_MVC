@@ -6,7 +6,7 @@
   <li><h3>부트 스트랩 : <a href="https://startbootstrap.com/template-categories/all/">Startbootstrap</a>사용</h3></li>
   <li><h3>작품소개 : Apache Tomcat을 통해 DB에 연동한 MVC 패턴의  프로젝트</h3></li>
 </ul>
-<h2>DB설계</h2> 
+<h2>DB설계(Oracle)</h2> 
 <img src="/img/pyppydb1.jpg" width="90%" height="90%">
 강아지 정보DB
 <img src="/img/memberdb2.jpg" width="90%" height="90%">
