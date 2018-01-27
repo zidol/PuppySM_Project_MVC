@@ -31,7 +31,7 @@
 <img src="/img/beforelogin.jpg" width="90%" height="90%">
 로그인 전
 <img src="/img/afterlogin.jpg" width="90%" height="90%">
-로그인 후
+로그인 후, 로그아웃 버튼 클릭
 <h2>회원가입 페이지</h2>
 <img src="/img/join.jpg" width="90%" height="90%">
 <img src="/img/join_page.jpg" width="90%" height="90%">
