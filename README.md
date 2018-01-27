@@ -9,7 +9,7 @@
 <h2>쇼핑몰 메인페이지 이미지</h2> 
 <img src="/img/puppymall_main2.jpg" width="90%" height="90%">
 <img src="/img/puppymall_main3.jpg" width="90%" height="90%">
-전체리스트(전체 목록 페이징 처리)
+전체리스트(전체 목록 페이징 처리), 우측 하단 스크롤업 기능(최상단으로 이동)
  <img src="/img/kindlist.jpg" width="90%" height="90%">
 종류별 리스트(각각 종류별 페이징 처리)
 <h4>적용 파일</h4>
@@ -27,6 +27,11 @@
 	<li><h4>MemberLoginAction.java</h4></li>
 	<li><h4>MemberLoginService.java</h4></li>
 </ul>
+<h2>로그인 전,후 메인 페이지</h2>
+<img src="/img/beforelogin_img.jpg" width="90%" height="90%">
+로그인 전
+<img src="/img/afterlogin_img.jpg" width="90%" height="90%">
+로그인 후
 <h2>회원가입 페이지</h2>
 <img src="/img/join.jpg" width="90%" height="90%">
 <img src="/img/join_page.jpg" width="90%" height="90%">
