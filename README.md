@@ -28,9 +28,9 @@
 	<li><h4>MemberLoginService.java</h4></li>
 </ul>
 <h2>로그인 전,후 메인 페이지</h2>
-<img src="/img/beforelogin_img.jpg" width="90%" height="90%">
+<img src="/img/beforelogin.jpg" width="90%" height="90%">
 로그인 전
-<img src="/img/afterlogin_img.jpg" width="90%" height="90%">
+<img src="/img/afterlogin.jpg" width="90%" height="90%">
 로그인 후
 <h2>회원가입 페이지</h2>
 <img src="/img/join.jpg" width="90%" height="90%">
